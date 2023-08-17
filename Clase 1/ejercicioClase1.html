@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nombreRepuestos = ["bomba de agua", "correa de distribucion", "aceite", "junta sello eje", "bujias"];
+        const precios = [15000, 3000, 3500, 5000, 2000];
+        const respuestoMayores3000 = [];
+        const respuestoMenoresOIguales3000 = [];
+
+        for(let i = 0 ; i< nombreRepuestos.length; i++){
+            if(precios[i] > 3000){
+                respuestoMayores3000.push(nombreRepuestos[i])
+            }else{
+                respuestoMenoresOIguales3000.push(nombreRepuestos[i])
+            }
+        }
+
+        console.log(respuestoMayores3000)
+        console.log(respuestoMenoresOIguales3000)
+    </script>
+</body>
+</html>
